@@ -1,6 +1,6 @@
-# weather_app
+# Flutter Weather App
 
-An other weather app 
+Another weather app 
 
 ## Getting Started
 
