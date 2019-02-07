@@ -301,11 +301,6 @@ class _WeatherAppState extends State<WeatherApp>
     return scaffold;
   }
 
-  dispose() {
-    controller.dispose();
-    super.dispose();
-  }
-
   Color background() {
     return Colors.deepOrange;
   }

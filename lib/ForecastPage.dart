@@ -122,7 +122,7 @@ class _ForecastWidgetState extends State<ForecastWidget>
     }
 
     return Container(
-        margin: EdgeInsets.only(left: 16, right: 16, bottom: 30, top: 30),
+        margin: EdgeInsets.only(left: 16, right: 16, bottom: 30, top: 5),
         child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: childs));

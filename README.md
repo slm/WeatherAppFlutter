@@ -1,8 +1,11 @@
-# weather_app
+# Weather App
 
-An other weather app 
+Weather app written with Flutter
 
 ## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+You can see these examples in this project.
+- Usage of rest apis
+- Animations on Flutter
+- Usage of Painter and interaction with animations
+- Generating of launcher icons android and ios
+with this command: `flutter packages pub run flutter_launcher_icons:main`

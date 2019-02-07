@@ -5,11 +5,13 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class WeatherIcons {
-
   static Map<String, dynamic> _icons;
 
   dynamic init() {
-    return rootBundle.loadString("assets/icons.json").then(jsonDecode).then((value)=> _icons = value);
+    return rootBundle
+        .loadString("assets/icons.json")
+        .then(jsonDecode)
+        .then((value) => _icons = value);
   }
 
   String _getIconName(Map<String, dynamic> resp) {
@@ -30,15 +32,16 @@ class WeatherIcons {
     return _icons[code.toString()]["label"];
   }
 
-   Widget getIcon(Map<String, dynamic> resp,Color color,double width,double height) {
+  Widget getIcon(
+      Map<String, dynamic> resp, Color color, double width, double height) {
     assert(_icons != null);
     var iconPath = "assets/svg/${_getIconName(resp)}.svg";
-    return SvgPicture.asset(iconPath,color: color,width: width,height: height);
+    return SvgPicture.asset(iconPath,
+        color: color, width: width, height: height);
   }
 
-  String getLabel(Map<String, dynamic> resp){
+  String getLabel(Map<String, dynamic> resp) {
     assert(_icons != null);
     return _getIconLabel(resp);
   }
-
 }
