@@ -9,3 +9,6 @@ You can see these examples in this project.
 - Usage of Painter and interaction with animations
 - Generating of launcher icons android and ios
 with this command: `flutter packages pub run flutter_launcher_icons:main`
+
+### Screenshots
+![ios](/art/ios.png) ![ios2](/art/ios2.png)
