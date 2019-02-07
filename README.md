@@ -1,4 +1,4 @@
-# Weather App
+# Flutter Weather App
 
 Weather app written with Flutter
 
